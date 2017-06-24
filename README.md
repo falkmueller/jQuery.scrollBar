@@ -30,3 +30,10 @@ When you dynamicly load content call this after them
 ```html
  <script>$(window).trigger("resize.scrollBox");</script>
 ```
+
+## Tested
+
+- Chrome (Pc, Android Tablet)
+- Firefox (Pc, Android Tablet)
+- Internet Explorer 11 (Pc)
+- Safari (Mac Book, iPad)
