@@ -111,8 +111,6 @@
                         
                         onScroll: function(){
                             
-                            console.log(this.wrapper[0].scrollHeight);
-                            
                             this.scrollBar.css("top", Math.min(this.scollbarContainer[0].clientHeight - this.scrollBar[0].clientHeight, this.scollbarContainer[0].clientHeight * this.wrapper[0].scrollTop / this.wrapper[0].scrollHeight) + "px");
                             
                         }
