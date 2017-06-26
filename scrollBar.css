@@ -17,8 +17,7 @@
     top: 5px;
     width: 10px;
 }
-
-.sb-scrollbar-container-hide {
+.sb-container-noscroll .sb-scrollbar-container {
     right: -20px;
 }
 

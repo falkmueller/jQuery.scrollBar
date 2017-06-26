@@ -10,6 +10,7 @@
 		var pluginName = "scrollBox",
 			defaults = {
 				containerClass: "sb-container",
+                                containerNoScrollClass: "sb-container-noscroll",
                                 contentClass: "sb-content",
                                 scrollbarContainerClass: "sb-scrollbar-container",
                                 scrollBarClass: "sb-scrollbar"
@@ -101,9 +102,9 @@
                             
                             this.scrollBar.css("height", this.scollbarContainer[0].clientHeight * wrapper_client_height / this.wrapper[0].scrollHeight + "px");
                              if(this.scollbarContainer[0].clientHeight <= this.scrollBar[0].clientHeight){
-                                 this.scollbarContainer.addClass("sb-scrollbar-container-hide");
+                                 $( this.element ).addClass(this.settings.containerNoScrollClass);
                              } else {
-                                  this.scollbarContainer.removeClass("sb-scrollbar-container-hide");
+                                 $( this.element ).removeClass(this.settings.containerNoScrollClass);
                              }
                              
                              this.onScroll();
